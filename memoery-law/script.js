@@ -73,12 +73,12 @@ function stopVideo() {
 //     youtubeFrame.innerHTML = `<iframe width="560" height="315" src="https://www.youtube.com/embed/cScUz023JtQ?si=oMGC8PzmzYb1MfZl&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`;
 //     videoContainer.appendChild(youtubeFrame);
 // }
-const emojis=["😢","😢","🙂","🙂","👹","👹","😍","😍","❤️","❤️","💪","💪","🔥","🔥","🎃","🎃"];
+const emojis=["./child-abuse.jpg","./child-abuse.jpg","./child-labour.jpg","./child-labour.jpg","./child-marriage-scaled-1.webp","./child-marriage-scaled-1.webp","./exploitation.png","./exploitation.png","./gender-inequality.jpeg","./gender-inequality.jpeg","./RTE.jpg","./RTE.jpg","./trafic.jpg","./trafic.jpg","./untouch.jpg","./untouch.jpg"];
         var shuf_emojis=emojis.sort(() =>(Math.random()>.5)?2:-1);
         for(var i=0;i<emojis.length;i++){
             let box=document.createElement('div')
             box.className='item';
-            box.innerHTML=shuf_emojis[i];
+            box.innerHTML=`<img src="${emojis[i]}" alt="emoji" height="48px" width="48px">`;
             let popup=document.getElementById("popup")
               function openPopup(){
                   popup.classList.add("open-popup");
